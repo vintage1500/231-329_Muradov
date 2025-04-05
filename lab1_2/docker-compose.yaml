@@ -1,0 +1,55 @@
+name: lab2-architecture 
+# описание контейнеров и образов, которые необходимо создать, выделяющие ими ресурсы и взаимосвязанные между ними
+services:
+
+  postgres-service:
+    container_name: postgres-container
+    image: postgres:17-alpine
+    ports: 
+      - 1234:5432
+    # environment:
+    #   - name=value
+    env_file:
+      - .env
+    restart: always
+
+  backend-service:
+    image: backend-image
+    container_name: backend-container
+    ports:
+      - 8000:8000
+    restart: unless-stopped
+    working_dir: /backend
+    command: >
+      sh -c "
+      gunicorn lab1.wsgi:application --bind 0.0.0.0:8000
+      "
+    volumes:
+      - staticfiles-volume:/staticfiles
+    depends_on:
+      postgres-service:
+        condition: service_started
+      backend-provision-service:
+        condition: service_completed_successfully
+
+  backend-provision-service:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: backend-image
+    container_name: backend-provision-container
+    restart: no
+    working_dir: /backend
+    command: > 
+      sh -c "
+      python manage.py migrate --noinput &&
+      python manage.py collectstatic --noinput
+      "
+    volumes:
+      - staticfiles-volume:/staticfiles
+    depends_on:
+      postgres-service:
+        condition: service_started
+
+volumes:
+  staticfiles-volume:  

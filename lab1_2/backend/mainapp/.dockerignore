@@ -1,0 +1,12 @@
+**/env
+# **/venv
+**/__pycache__
+
+# .vscode/
+# staticfiles/
+
+**/*.pyc
+DockerFile*
+# *.sqlite
+# *.http
+*.pyc

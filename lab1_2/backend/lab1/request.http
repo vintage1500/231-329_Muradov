@@ -1,0 +1,34 @@
+@hostname = http://localhost:8000
+GET {{hostname}}/article/11
+Content-Type: application/json
+
+### 
+GET {{hostname}}/article
+Content-Type: application/json
+
+###
+POST {{hostname}}/article
+Content-Type: application/json
+
+{
+    "title": "Title1",
+    "full_text": "FullText1",
+    "date": "2025-02-20 18:56:00+05",
+    "author": "Author1",
+    "is_publish": true
+}
+
+###
+DELETE {{hostname}}/article/1002
+Content-Type: application/json
+
+###
+PATCH {{hostname}}/article/1006
+Content-Type: application/json
+
+{
+    "title": "Title2",
+    "full_text": "FullText2",
+    "date": "2025-02-20 18:56:00+05",
+    "author": "Author2"
+}
