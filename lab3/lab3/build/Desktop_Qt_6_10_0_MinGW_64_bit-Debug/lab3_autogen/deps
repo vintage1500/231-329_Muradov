@@ -628,11 +628,15 @@ lab3_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
 	C:/work_place/univer/architecture/lab3/lab3/CMakeLists.txt \
+	C:/work_place/univer/architecture/lab3/lab3/article.cpp \
+	C:/work_place/univer/architecture/lab3/lab3/article.h \
 	C:/work_place/univer/architecture/lab3/lab3/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
 	C:/work_place/univer/architecture/lab3/lab3/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake \
 	C:/work_place/univer/architecture/lab3/lab3/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake \
 	C:/work_place/univer/architecture/lab3/lab3/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	C:/work_place/univer/architecture/lab3/lab3/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/lab3_autogen/moc_predefs.h \
+	C:/work_place/univer/architecture/lab3/lab3/clientinterface.cpp \
+	C:/work_place/univer/architecture/lab3/lab3/clientinterface.h \
 	C:/work_place/univer/architecture/lab3/lab3/main.cpp \
 	C:/work_place/univer/architecture/lab3/lab3/mainwindow.cpp \
 	C:/work_place/univer/architecture/lab3/lab3/mainwindow.h \

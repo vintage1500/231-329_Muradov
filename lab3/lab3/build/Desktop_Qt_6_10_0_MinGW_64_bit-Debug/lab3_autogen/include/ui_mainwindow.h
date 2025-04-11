@@ -23,7 +23,11 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QPushButton *pushButton;
+    QPushButton *get_1;
+    QPushButton *get_all;
+    QPushButton *update;
+    QPushButton *create;
+    QPushButton *delete_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -34,13 +38,25 @@ public:
         MainWindow->resize(800, 600);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(160, 140, 80, 18));
+        get_1 = new QPushButton(centralwidget);
+        get_1->setObjectName("get_1");
+        get_1->setGeometry(QRect(190, 70, 341, 51));
+        get_all = new QPushButton(centralwidget);
+        get_all->setObjectName("get_all");
+        get_all->setGeometry(QRect(190, 140, 341, 51));
+        update = new QPushButton(centralwidget);
+        update->setObjectName("update");
+        update->setGeometry(QRect(190, 280, 341, 51));
+        create = new QPushButton(centralwidget);
+        create->setObjectName("create");
+        create->setGeometry(QRect(190, 210, 341, 51));
+        delete_2 = new QPushButton(centralwidget);
+        delete_2->setObjectName("delete_2");
+        delete_2->setGeometry(QRect(190, 360, 341, 51));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 800, 17));
+        menubar->setGeometry(QRect(0, 0, 800, 25));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
@@ -54,7 +70,11 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\277\321\200\320\276\321\201\321\213", nullptr));
+        get_1->setText(QCoreApplication::translate("MainWindow", "get 1", nullptr));
+        get_all->setText(QCoreApplication::translate("MainWindow", "get all", nullptr));
+        update->setText(QCoreApplication::translate("MainWindow", "update", nullptr));
+        create->setText(QCoreApplication::translate("MainWindow", "create", nullptr));
+        delete_2->setText(QCoreApplication::translate("MainWindow", "delete", nullptr));
     } // retranslateUi
 
 };

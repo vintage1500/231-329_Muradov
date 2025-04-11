@@ -398,6 +398,18 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/work_place/univer/architecture/lab3/lab3/article.h",
+			"MU",
+			"EWIEGA46WW/moc_article.cpp",
+			null
+		],
+		[
+			"C:/work_place/univer/architecture/lab3/lab3/clientinterface.h",
+			"MU",
+			"EWIEGA46WW/moc_clientinterface.cpp",
+			null
+		],
+		[
 			"C:/work_place/univer/architecture/lab3/lab3/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -477,6 +489,12 @@
 	"SETTINGS_FILE" : "C:/work_place/univer/architecture/lab3/lab3/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/lab3_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "C:/work_place/univer/architecture/lab3/lab3/article.cpp", "MU", null ],
+		[
+			"C:/work_place/univer/architecture/lab3/lab3/clientinterface.cpp",
+			"MU",
+			null
+		],
 		[ "C:/work_place/univer/architecture/lab3/lab3/main.cpp", "MU", null ],
 		[
 			"C:/work_place/univer/architecture/lab3/lab3/mainwindow.cpp",

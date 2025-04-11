@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-8aefaec6ab09abd0e0a1.json",
+					"jsonFile" : "directory-.-Debug-1859713f63d52d16f1ec.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "lab3::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lab3-Debug-d877a87c7d0a03e6e759.json",
+					"jsonFile" : "target-lab3-Debug-637dbae6fb7a91ae425c.json",
 					"name" : "lab3",
 					"projectIndex" : 0
 				},
